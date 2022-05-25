@@ -1,0 +1,12 @@
+webauthn_setup:
+  version: 1.x
+  js:
+    js/WebAuthnSetup.js: {}
+
+webauthn_validation:
+  version: 1.x
+  js:
+    js/WebAuthnValidation.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery

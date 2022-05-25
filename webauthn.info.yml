@@ -1,0 +1,8 @@
+name: "WebAuthn"
+type: module
+package: Security
+description: "Provides Webauthn implementation for the user."
+core: 8.x
+core_version_requirement: ^8 || ^9
+dependencies:
+  - tfa:tfa (>=8.x-1.0-alpha7)

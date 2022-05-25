@@ -1,0 +1,22 @@
+<?php
+
+use Drupal\Core\Database\Database;
+
+/**
+ * @file
+ * Installation related functions for WebAuthn module.
+ */
+
+/**
+ * Update the validation_plugin_settings.
+ */
+function webauthn_schema() {
+  $config = \Drupal::configFactory()->getEditable('tfa.settings');
+
+  $allowed_validation_plugins = $config->get('allowed_validation_plugins');
+  $allowed_validation_plugins['tfa_webauthn'] = 'tfa_webauthn';
+
+  $config
+    ->set('allowed_validation_plugins', $allowed_validation_plugins)
+    ->save();
+}

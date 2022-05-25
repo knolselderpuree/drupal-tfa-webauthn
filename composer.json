@@ -1,0 +1,21 @@
+{
+    "name": "drupal/webauthn",
+    "type": "drupal-module",
+    "description": "TFA plugin for WebAuthn.",
+    "license": "GPL-2.0-or-later",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Bert Vandycke",
+            "email": "bert.vandycke@gmail.com"
+        }
+    ],
+    "require": {
+        "firehed/u2f": "^1.2",
+        "lcobucci/jwt": "^4.0",
+        "drupal/tfa": "^1.0"
+    },
+    "require-dev": {
+        "drupal/tfa": "1.x-dev"
+    }
+}
